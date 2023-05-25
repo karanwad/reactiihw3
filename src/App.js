@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { List } from './List'
 
 function App() {
-  return (
+  
+   const animals = [
+    {id: 1, animalName: "dog" },
+    {id: 2, animalName: "cat" },
+    {id: 3, animalName: "chicken" },
+    {id: 4, animalName: "cow" },
+    {id: 5, animalName: "sheep" },
+    {id: 6, animalName: "horse" },
+   ]
+
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <List data={animals}/>
     </div>
-  );
+   );
 }
 
 export default App;
